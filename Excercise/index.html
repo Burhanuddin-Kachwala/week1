@@ -5,6 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Webpage</title>
+    <style>
+        table {
+          border-collapse: collapse; /* Ensures borders don't double up */
+          text-align: center;
+        }
+        td, th {
+          padding: 10px; /* Equivalent to cellpadding="10" */
+        }
+        .week{
+            background-color: beige;
+        }
+        thead{
+            font-weight: bold;
+        }
+      </style>
 
 </head>
 
@@ -34,8 +49,62 @@
             <a href="./vid1.mp4">MP4</a>
             video.
         </video>
+        <a href="./vid1.mp4">MP4</a>
+        <br>
+        <a href="backup.txt" download="file">Download txt </a>
 
     </article>
+    <section>
+        <Table border="1">
+            <caption>
+                Weekly PHP intern Schedule
+              </caption>
+            <thead>
+                <tr>
+                 <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td colspan="5" class="week"><Strong>Week 1 ( PHP Fundamentals & Basics of Web Development )</Strong> </td>
+            </tr>
+                <tr>
+                    
+                    <td>Introduction to Web Development </td>
+                    <td>PHP Syntax and Basic Concepts </td>
+                    <td>Functions and Arrays </td>
+                    <td>Superglobals and Forms Handling </td>
+                    <td> File Handling in PHP </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="week"><Strong>Week 2 ( Database Integration & Advanced PHP )</Strong> </td>
+                </tr>
+                <tr>
+                    
+                    <td> Introduction to Databases </td>
+                    <td>PHP and MySQL Integration </td>
+                    <td> User Authentication </td>
+                    <td>Session Management </td>
+                    <td> Error Handling and Debugging </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="week"><Strong>Week 3( Advanced Topics & Mini Project )</Strong> </td>
+                </tr>
+                <tr>
+                    
+                    <td>Working with APIs </td>
+                    <td>MVC Architecture </td>
+                    <td>Functions and Arrays </td>
+                    <td>PHP Frameworks </td>
+                    <td> Security Best Practices </td>
+                </tr>
+            </tbody>
+        </Table>
+    </section>
     <footer>
         <p>&copy; 2025 ArsenalTech | All Rights Reserved.</p>
     </footer>
